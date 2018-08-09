@@ -8,6 +8,6 @@ assert(TimesTwo(in) == 4)
 in = -1;
 assert(TimesTwo(in) == -2)
 
-%% Test 3: fail
+%% Test 3: now passes!
 in = 0;
-assert(TimesTwo(in) ~= 2 * in) 
+assert(TimesTwo(in) == 2 * in) 
