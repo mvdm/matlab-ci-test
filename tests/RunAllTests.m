@@ -6,14 +6,7 @@ import('matlab.unittest.plugins.CodeCoveragePlugin');
 import('matlab.unittest.plugins.codecoverage.CoberturaFormat');
 
 try
-    % set up paths
-    ws = getenv('WORKSPACE');
-    src = fullfile(ws, 'source');
-    addpath(src);
-    
-    tests = fullfile(ws, 'tests');
-    suite = testsuite(tests);
-    
+    suite = testsuite;
     % Create a typical runner with text output
     runner = TestRunner.withTextOutput();
     % Add the TAP plugin and direct its output to a file
@@ -27,9 +20,9 @@ try
     display(results);
 catch e
     disp(getReport(e,'extended'));
-    exit(1);
+    %exit(1);
 end
-exit;
+%exit;
 
 %% non-TAP version
 % import matlab.unittest.TestSuite;
