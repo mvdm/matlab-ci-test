@@ -3,3 +3,5 @@
 [![codecov](https://codecov.io/gh/mvdm/matlab-ci-test/branch/master/graph/badge.svg)](https://codecov.io/gh/mvdm/matlab-ci-test)
 
 # matlab-ci-test
+
+Test repo for continuous integration.
